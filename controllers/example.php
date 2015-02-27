@@ -26,7 +26,7 @@ class Example extends CI_Controller
 			'x_zip'					=> '40502',
 			'x_country'				=> 'US',
 			'x_phone'				=> '555-123-4567',
-			'x_email'				=> 'test@example.com',
+			'x_email'				=> $this->authorize_net->getApiEmailAddress(),
 			'x_customer_ip'			=> $this->input->ip_address(),
 			);
 		$this->authorize_net->setData($auth_net);
