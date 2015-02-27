@@ -17,7 +17,8 @@ class Authorize_net
 
     private $api_login_id = '';			// API Login ID
     private $api_transaction_key = '';	// API Transaction Key
-    private $api_url = '';				// Where we postin' to?
+    private $api_url = '';// Where we postin' to?
+    private $api_email = '';// the email account we use
 	
     private $post_vals = array();		// Values that get posted to Authroize.net
 	
@@ -154,6 +155,12 @@ class Authorize_net
 	public function getTransactionId()
 	{
 		return $this->transation_id;
+	}
+	
+	// Get the api_email address ID
+	public function getTransactionId()
+	{
+		return $this->api_email;
 	}
 	
 	// Get the transation code
