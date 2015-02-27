@@ -157,8 +157,8 @@ class Authorize_net
 		return $this->transation_id;
 	}
 	
-	// Get the api_email address ID
-	public function getTransactionId()
+	// Get the api_email address 
+	public function getApiEmailAddress()
 	{
 		return $this->api_email;
 	}
